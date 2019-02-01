@@ -17,6 +17,9 @@ public class Hello {
     //символьные
     char aChar = 'a';
 
+    //логический
+    boolean aBoolean = true;
+
     //строковые
     String string = "Приветствую всех учеников java";
 
