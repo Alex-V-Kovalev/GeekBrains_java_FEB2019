@@ -31,7 +31,13 @@ public class Hello {
         pozitiveNegative(-7);
         System.out.println(isNegative(4));
         helloHuman("");
-        System.out.println(method8(false, false));
+        System.out.println("Выражение (!(a && b) && (a || b)) || ((a && b) || !(a || b)) возвращает всегда true" +
+                "\n\tКак упростить это выражение я пока не разобрался, поэтому составлю таблицу истинности:" +
+                "\n\ta\t\tb\t\t(!(a && b) && (a || b)) || ((a && b) || !(a || b))" +
+                "\n\ttrue\ttrue\t" + method8(true, true) +
+                "\n\ttrue\tfalse\t" + method8(true, false) +
+                "\n\tfalse\ttrue\t" + method8(false, true) +
+                "\n\tfalse\tfalse\t"+ method8(false, false));
         System.out.println("Упрощаем (!(a < b) && !(a > b)) -> a == b. \n" +
                 "\tПотому, что оператор && (И) дает true, когда оба операнда true (т.е. true && true -> true).\n" +
                 "\tВ нашем случае перед операндами стоит !(отрицание), таким образом получаем !false && !false -> true.\n" +
