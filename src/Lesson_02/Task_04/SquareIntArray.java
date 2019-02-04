@@ -14,9 +14,10 @@ public class SquareIntArray {
             try {
                 System.out.print("Введите размерность квадратного массива и нажмите <Enter>: ");
                 volume = Integer.parseInt(reader.readLine());
+                if (volume < 1) throw new Exception();
                 onceMore = false;
             } catch (Exception e) {
-                System.out.println("Будьте внимательны! Надо ввести целое число\n");
+                System.err.println("Будьте внимательны! Надо ввести целое число, больше 0");
                 onceMore = true;
             }
         } while (onceMore);
