@@ -1,4 +1,4 @@
-package Lesson_02.Task_06;
+package lesson_02.task_06;
 
 public class CheckBalance {
     public static void main(String[] args) {

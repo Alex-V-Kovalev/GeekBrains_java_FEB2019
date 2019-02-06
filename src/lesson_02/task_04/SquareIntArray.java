@@ -1,7 +1,6 @@
-package Lesson_02.Task_04;
+package lesson_02.task_04;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
