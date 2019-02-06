@@ -1,4 +1,4 @@
-package lesson_02.Task_07;
+package lesson_02.task_07;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
