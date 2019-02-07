@@ -1,9 +1,10 @@
 package lesson_02.additionaltasks;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class Deal {
+    private static int index;
+
     public static void main(String[] args) {
         int deal;
         try {
@@ -25,7 +26,6 @@ public class Deal {
         System.out.println(Arrays.toString(cards));
 
         System.out.println("\nНачинаем раздачу:");
-        int index = 0;
         for (int i = 0; i < deal; i++) {
             System.out.print("" + (i + 1) + " рука: ");
             for (int j = 0; j < 5; j++) {
@@ -65,15 +65,17 @@ public class Deal {
 
             cards[i] = vol;
         }
+        index = 0;
     }
 
     public static void deckSuffle(String[] cards) {
         int count = cards.length;
-        for (int i = 0; i < count - 1; i++) {
+        for (int i = 0; i < count; i++) {
             int rnd = (int) (Math.random() * (count - i) + i);
             String tmp = cards[rnd];
             cards[rnd] = cards[i];
             cards[i] = tmp;
         }
+        index = 0;
     }
 }
