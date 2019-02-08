@@ -5,7 +5,10 @@ import java.util.Random;
 public class DiscreteDistribution {
     public static void main(String[] args) {
 
-        if (args.length < 1) printErrMsg();
+        if (args.length < 1) {
+            printErrMsg();
+            return;
+        }
 
         int[] ints = new int[args.length];
         int sum = 0;
