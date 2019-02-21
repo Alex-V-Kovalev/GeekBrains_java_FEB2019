@@ -1,28 +1,27 @@
 package lesson_05.computer;
 
-public class Cpu {
-    private String vendor;
-    private String archtecture;
+public class Cpu extends ComputerParts{
+    private String architecture;
     private String type;
     private String slot;
-    private int coutCore;
-    private int perfomance;
+    private int countCore;
+    private int performance;
 
-    public Cpu(String vendor, String archtecture, String type, String slot, int coutCore, int perfomance) {
+    public Cpu(String vendor, String architecture, String type, String slot, int countCore, int performance) {
         this.vendor = vendor;
-        this.archtecture = archtecture;
+        this.architecture = architecture;
         this.type = type;
         this.slot = slot;
-        this.coutCore = coutCore;
-        this.perfomance = perfomance;
+        this.countCore = countCore;
+        this.performance = performance;
     }
 
     public String getVendor() {
         return vendor;
     }
 
-    public String getArchtecture() {
-        return archtecture;
+    public String getArchitecture() {
+        return architecture;
     }
 
     public String getType() {
@@ -33,11 +32,11 @@ public class Cpu {
         return slot;
     }
 
-    public int getCoutCore() {
-        return coutCore;
+    public int getCountCore() {
+        return countCore;
     }
 
-    public int getPerfomance() {
-        return perfomance;
+    public int getPerformance() {
+        return performance;
     }
 }

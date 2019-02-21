@@ -1,7 +1,6 @@
 package lesson_05.computer;
 
-public class Ram {
-    private String vendor;
+public class Ram extends ComputerParts{
     private String type;
     private int size;
 
